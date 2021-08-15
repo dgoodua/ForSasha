@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+        <header>
+            My diary
+        </header>
+        <main>
+           <div id="wrapper">
+            <form id="myform">
+              <div class="form-row"><div>first name</div><input required  type="text" name="firstname" id="" pattern="[A-Z][a-z]+"><br></div>
+                <div class="form-row"><div> second name</div><input required type="text" name="secondname" pattern="[A-Z][a-z]+" id=""><br></div>
+                <div class="form-row"><div> phone number</div>
+                <input required type="text" name="phone" pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"><br></div>
+                <div class="form-row"><div>gender</div><div> <input pattern="(female|male)"required type="radio" name="gender"value="male">male<input type="radio" name="gender" value="female">female<br></div></div>
+                <div class="form-row"><div>age</div>
+                <input  required type="number" name="age" pattern="(?<!.+)([1-9]\d|[1-9])(?!.+)"><br></div>
+            </form>
+                <div class="form-row"><button form="myform" id="submit" type="submit">add</button></div></div>
+            </div>
+
+             <div class="add" ></div>
+            <table>
+                <thead><th>№</th>
+                <th>First name</th>
+                <th>Second Name</th>
+                <th>Phone</th>
+                <th>Gender</th>
+                <th>Age</th>
+                <th>Actions</th></tr></thead>
+                <tbody>
+                   </tbody>
+            </table>
+        </main>
+        <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+*{font-family: sans-serif;}
+#wrapper{
+    display: none;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+}
+.form-row>div{
+    width: 170px;
+}
+.form-row>input{
+    width: 163px;
+
+}
+.form-row{
+display: flex;
+justify-content:center;
+}
+body{
+    margin: 0em;
+    padding: 0em;
+    background-color: rgb(79, 166, 206);
+}
+
+
+header{
+    height: 100px;
+    background-color: #f5f5f5;
+    font-size: 5em;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px -10px 8px 1px rgba(78, 90, 99, 0.24) inset;
+    border-bottom: 1px solid grey;
+    min-width: 310px;
+}
+table{
+    background-color: #f5f5f5;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+th{
+     width: 150px;
+}
+td:hover{
+    background-color: #b6b6b6;
+}
+tr:not(tbody tr:last-of-type){
+   
+   border-bottom: grey 1px solid;
+    
+}
+
+td{
+    text-align: center;
+}    
+.delete,.change{
+    border-radius: 10px;
+    width: 70px;
+    height: 35px;
+    margin: 3px;
+}
+.delete{
+    background-color: #f91b57;
+}
+.change{
+    background-color:rgb(19, 216, 51);
+}
+.add{
+    border-radius: 50%;
+    background-color: rgb(79, 166, 206);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    margin: 2em auto;
+    display: block;
+}
+.add::before,.add::after{
+content: " ";
+position: absolute;
+background-color: seashell;
+width: 8px;
+height: 45px;
+border-radius: 3px;
+}
+.add::after{
+    transform: translate(21px,3px) rotate(-90deg);
+}
+.add::before{
+    transform: translate(21px,3px);
+}
+.add:hover{
+    background-color: rgb(75, 158, 196);
+    box-shadow: 0px 0px 25px 10px rgba(34, 60, 80, 0.2);
+}
+td[contenteditable="true"]:hover{
+    background-color: #dbdbdbc7;
+transform: scale(1.2,1.2);
+margin: 8px;}
+
+.wrong{
+    background-color: rgba(247, 33, 4, 0.582);
+}
+.right{
+    background-color: #13d8347a;
+}
+button:disabled{
+    transform: scale(0.8,0.8);
+    background-color: #ccc;
+}
